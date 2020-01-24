@@ -1,0 +1,8 @@
+.about-me {
+  background-color: $color-primary-dark;
+  padding: 2rem;
+
+  @media screen and (max-width: 50rem) {
+    padding: 0;
+  }
+}

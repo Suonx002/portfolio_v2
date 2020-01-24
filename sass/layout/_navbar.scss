@@ -40,4 +40,12 @@
       border-bottom: 2px solid $color-primary-dark;
     }
   }
+
+  @media screen and (max-width: 80rem) {
+    justify-content: center;
+
+    &__logo {
+      display: none;
+    }
+  }
 }

@@ -8,8 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Vuthy Suon | Front End Engineer</title>
   </head>
@@ -37,13 +39,91 @@
     </nav>
     <header class="header">
       <div class="header__text-box text-center">
-        <h1 class="heading-primary ">
+        <h1
+          class="heading-primary"
+          data-aos="zoom-in"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+        >
           <span class="heading-primary--main ">Vuthy Suon</span>
-          <span class="heading-primary--sub ">Front End Enginner</span>
+          <span class="heading-primary--sub ">Front End Engineer</span>
         </h1>
-        <a href="#" class="btn btn--white">See Projects</a>
+        <a
+          href="#"
+          class="btn btn--white"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          data-aos-duration="1500"
+          >See Projects</a
+        >
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="about-me ">
+        <div class="container">
+          <div class="about-me__header text-center">
+            <h2 class="heading-secondary">
+              Front end focused
+              <span class="heading-secondary--main"
+                >With full stack experience</span
+              >
+            </h2>
+          </div>
+          <div class="about-me__content">
+            <div class="about-me__about-me card">
+              <h3 class="heading-tertiary">About Me</h3>
+              <p class="lead">
+                Passionate front end engineer with an emphasis on modern web
+                development technologies. Self-starter on a vigorous path of
+                continuous growth while consistently striving to learn and
+                understand various programming languages to create beautiful and
+                responsive websites. Possess a B.A.S in Information Technology
+                Infrastructure from UMN Twin Cities. Seeking to leverage my
+                engineering expertise, strong collaboration abilities, and
+                analytical thinking competency in the role of a front end
+                software engineer.
+              </p>
+            </div>
+            <div class="about-me__skills card">
+              <h3 class="heading-tertiary">
+                Familiar languages
+              </h3>
+              <ul class="about-me__list">
+                <li class="about-me__item about-me__item--html">
+                  <i class="fab fa-html5"></i>
+                </li>
+                <li class="about-me__item about-me__item--css">
+                  <i class="fab fa-css3"></i>
+                </li>
+                <li class="about-me__item about-me__item--scss">
+                  <i class="fab fa-sass"></i>
+                </li>
+                <li class="about-me__item about-me__item--js">
+                  <i class="fab fa-js"></i>
+                </li>
+                <li class="about-me__item about-me__item--react">
+                  <i class="fab fa-react"></i>
+                </li>
+                <li class="about-me__item about-me__item--node">
+                  <i class="fab fa-node"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
+  <script
+    src="https://kit.fontawesome.com/4aab0af21c.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000
+    });
+  </script>
 </html>

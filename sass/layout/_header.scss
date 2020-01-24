@@ -6,11 +6,15 @@
   align-items: center;
 
   background-image: linear-gradient(
-      rgba($color-primary, 0.4),
-      rgba($color-primary, 0.4)
+      rgba($color-primary, 0.7),
+      rgba($color-primary, 0.7)
     ),
     url('./../img/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  &__text-box {
+    padding: 1.5rem;
+  }
 }

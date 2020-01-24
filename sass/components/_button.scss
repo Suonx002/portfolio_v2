@@ -5,11 +5,16 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.8rem 2rem;
-    border-radius: 100px;
     cursor: pointer;
-    border: none;
+    border: 2px solid $color-primary-dark;
+    border-radius: 3px;
+
     font-size: $default-font-size;
     transition: all 0.2s;
+
+    @media screen and (max-width: 80rem) {
+      font-size: 1.3rem;
+    }
   }
 
   &:hover {
@@ -19,7 +24,6 @@
   &:active,
   &:focus {
     outline: none;
-    transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 

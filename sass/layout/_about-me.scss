@@ -1,0 +1,79 @@
+.about-me {
+  &__content {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    display: flex;
+  }
+
+  &__about-me {
+    flex: 70%;
+    margin-right: 2rem;
+    padding: 1rem;
+  }
+
+  &__skills {
+    flex: 30%;
+    padding: 1rem;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 1rem;
+    text-align: center;
+    flex: 33%;
+    transition: all 0.3s;
+
+    &--html {
+      color: $color-orange;
+    }
+
+    &--css {
+      color: $color-blue-dark;
+    }
+
+    &--js {
+      color: $color-yellow;
+    }
+
+    &--react {
+      color: $color-blue-dark;
+    }
+
+    &--scss {
+      color: $color-pink;
+    }
+
+    &--node {
+      color: $color-green;
+    }
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  @media screen and (max-width: 80rem) {
+    &__content {
+      flex-direction: column;
+    }
+    &__about-me {
+      margin-right: 0rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 50rem) {
+    &__content {
+      padding: 0;
+    }
+  }
+}
