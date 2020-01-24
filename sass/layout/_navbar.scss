@@ -7,9 +7,15 @@
   background-color: $color-secondary;
 
   &__logo {
+    transition: all 0.3s;
     img {
       width: 2.5rem;
       height: 2.5rem;
+    }
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
     }
   }
 
@@ -38,6 +44,17 @@
     a:hover,
     a:active {
       border-bottom: 2px solid $color-primary-dark;
+    }
+
+    &--resume {
+      a {
+        border: 2px solid $color-primary-dark !important;
+
+        &:hover,
+        &:active {
+          background-color: rgba($color-primary-dark, 0.1);
+        }
+      }
     }
   }
 
