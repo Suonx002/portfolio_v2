@@ -347,6 +347,23 @@ body {
   .contact__item:hover, .contact__item:active {
     transform: scale(1.2); }
 
+.footer .container {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 70rem) {
+    .footer .container {
+      padding: 0.5rem; } }
+  @media screen and (max-width: 60rem) {
+    .footer .container {
+      font-size: 1.1rem; } }
+
+.footer__logo {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.3s; }
+  .footer__logo:active, .footer__logo:hover {
+    transform: scale(1.2); }
+
 .about-me {
   background-color: #192a56;
   padding: 1.5rem; }
@@ -365,3 +382,12 @@ body {
 .contact {
   padding: 1.5rem;
   background-color: #192a56; }
+  @media screen and (max-width: 70rem) {
+    .contact {
+      padding: 0.5rem; } }
+
+.footer {
+  font-size: 1.4rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  color: #273c75; }
