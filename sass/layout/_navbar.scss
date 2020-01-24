@@ -1,0 +1,43 @@
+.navbar {
+  height: 4.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-secondary;
+
+  &__logo {
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 1rem;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    a:link,
+    a:visited {
+      color: $color-primary;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    a:hover,
+    a:active {
+      border-bottom: 2px solid $color-primary-dark;
+    }
+  }
+}

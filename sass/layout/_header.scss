@@ -1,0 +1,16 @@
+.header {
+  min-height: calc(100vh - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+      rgba($color-primary, 0.4),
+      rgba($color-primary, 0.4)
+    ),
+    url('./../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
