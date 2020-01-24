@@ -27,7 +27,7 @@ body {
   .heading-primary--sub {
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     display: inline-block; }
   @media screen and (max-width: 80rem) {
     .heading-primary--main {
@@ -36,8 +36,19 @@ body {
     .heading-primary--sub {
       font-size: 1.8rem; } }
   @media screen and (max-width: 50rem) {
+    .heading-primary--main {
+      letter-spacing: 1.1rem; }
     .heading-primary--sub {
       font-size: 1.6rem; } }
+  @media screen and (max-width: 45rem) {
+    .heading-primary--main {
+      letter-spacing: 1rem; } }
+  @media screen and (max-width: 40rem) {
+    .heading-primary--main {
+      letter-spacing: 0.3rem; } }
+  @media screen and (max-width: 35rem) {
+    .heading-primary--main {
+      letter-spacing: 0.15rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -72,20 +83,38 @@ body {
     .lead {
       font-size: 1rem; } }
 
+.extra-small {
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 80rem) {
+    .extra-small {
+      font-size: 0.9rem; } }
+  @media screen and (max-width: 50rem) {
+    .extra-small {
+      font-size: 0.8rem; } }
+
+.small {
+  font-size: 1.3rem; }
+  @media screen and (max-width: 80rem) {
+    .small {
+      font-size: 1.1rem; } }
+  @media screen and (max-width: 50rem) {
+    .small {
+      font-size: 1rem; } }
+
 .text-center {
   text-align: center; }
 
 .container {
-  max-width: 120rem;
-  margin: 0 auto; }
+  max-width: 120rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.8rem 2rem;
   cursor: pointer;
-  border: 2px solid #192a56;
-  border-radius: 3px;
+  border: 2px solid #f9f9f9;
+  border-radius: 100px;
   font-size: 1.6rem;
   transition: all 0.2s; }
   @media screen and (max-width: 80rem) {
@@ -100,18 +129,42 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #f9f9f9;
-  color: #192a56;
+  color: #f9f9f9;
+  background-color: #192a56;
   transition: all 0.2s; }
   .btn--white:hover {
-    background-color: #dcdde1; }
+    background-color: rgba(25, 42, 86, 0.5); }
+
+.btn--primary {
+  color: #192a56;
+  border: 2px solid #192a56 !important; }
+  .btn--primary:hover {
+    background-color: rgba(249, 249, 249, 0.5); }
+
+.btn--dark {
+  color: #f9f9f9;
+  background-color: #192a56;
+  transition: all 0.2s; }
+  .btn--dark:hover {
+    background-color: rgba(25, 42, 86, 0.9); }
+
+.btn--small {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.2rem !important; }
+  @media screen and (max-width: 80rem) {
+    .btn--small {
+      font-size: 1.1rem !important; } }
+  @media screen and (max-width: 50rem) {
+    .btn--small {
+      font-size: 1rem !important; } }
 
 .card {
   padding: 1rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   transition: all 0.3s; }
   .card:hover {
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
 
 .navbar {
   height: 4.5rem;
@@ -160,6 +213,9 @@ body {
   background-repeat: no-repeat; }
   .header__text-box {
     padding: 1.5rem; }
+
+.about-me .container {
+  margin: 0 auto; }
 
 .about-me__content {
   margin-top: 2rem;
@@ -215,9 +271,54 @@ body {
   .about-me__content {
     padding: 0; } }
 
+.portfolio {
+  margin: 0 auto; }
+  .portfolio__header h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .portfolio__showcase {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media screen and (max-width: 70rem) {
+      .portfolio__showcase {
+        flex-direction: column; } }
+  .portfolio__item {
+    flex: 32%;
+    padding: 1rem;
+    margin: 0.5rem;
+    overflow: hidden; }
+  .portfolio__img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    filter: brightness(90%);
+    transition: all 0.3s;
+    margin-bottom: 1rem; }
+    .portfolio__img:hover {
+      transform: scale(1.03);
+      filter: brightness(100%); }
+  .portfolio__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0; }
+    .portfolio__btn > *:not(:last-child) {
+      margin-right: 0.5rem; }
+
 .about-me {
   background-color: #192a56;
-  padding: 2rem; }
-  @media screen and (max-width: 50rem) {
+  padding: 1.5rem; }
+  @media screen and (max-width: 70rem) {
     .about-me {
-      padding: 0; } }
+      padding: 1rem; } }
+
+.portfolio {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  color: #273c75; }
+  @media screen and (max-width: 70rem) {
+    .portfolio {
+      padding: 0.5rem; } }

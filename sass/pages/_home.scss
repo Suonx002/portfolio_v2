@@ -1,8 +1,18 @@
 .about-me {
   background-color: $color-primary-dark;
-  padding: 2rem;
+  padding: 1.5rem;
 
-  @media screen and (max-width: 50rem) {
-    padding: 0;
+  @media screen and (max-width: 70rem) {
+    padding: 1rem;
+  }
+}
+
+.portfolio {
+  padding: 1.5rem;
+  background-color: $color-secondary;
+  color: $color-primary;
+
+  @media screen and (max-width: 70rem) {
+    padding: 0.5rem;
   }
 }
