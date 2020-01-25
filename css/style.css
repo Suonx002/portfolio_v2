@@ -353,7 +353,6 @@ body {
 
 .contact__phone, .contact__email {
   font-size: 1.6rem;
-  text-decoration: none;
   margin-bottom: 1rem; }
   .contact__phone i, .contact__email i {
     margin-right: 0.5rem; }
