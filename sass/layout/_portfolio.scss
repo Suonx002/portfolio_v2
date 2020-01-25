@@ -38,6 +38,14 @@
       filter: brightness(100%);
     }
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 60rem) {
+      height: 20rem;
+    }
+
+    @media screen and (max-width: 40rem) {
+      height: 15rem;
+    }
   }
 
   &__btn {

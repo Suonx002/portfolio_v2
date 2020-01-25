@@ -53,13 +53,17 @@ body {
 
   @media screen and (max-width: 40rem) {
     &--main {
+      font-size: 3.5rem;
+
       letter-spacing: 0.3rem;
     }
   }
 
   @media screen and (max-width: 35rem) {
     &--main {
-      letter-spacing: 0.15rem;
+      font-size: 3rem;
+
+      letter-spacing: 0.12rem;
     }
   }
 }
@@ -70,7 +74,7 @@ body {
   font-weight: 400;
   display: inline-block;
   letter-spacing: 2px;
-  padding: 0.4rem;
+  // padding: 0.4rem;
 
   &--main {
     display: block;
@@ -83,17 +87,30 @@ body {
   @media screen and (max-width: 50rem) {
     font-size: 1.8rem;
   }
+
+  @media screen and (max-width: 40rem) {
+    font-size: 1.3rem;
+  }
 }
 
 .heading-tertiary {
   font-size: $default-font-size;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 80rem) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 50rem) {
+    font-size: 1.1rem;
+  }
 }
 
 .lead {
   font-size: 1.4rem;
+  hyphens: auto;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
@@ -122,6 +139,7 @@ body {
 }
 
 .small {
+  hyphens: auto;
   font-size: 1.3rem;
 
   @media screen and (max-width: 80rem) {

@@ -2,6 +2,7 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media screen and (max-width: 70rem) {
       padding: 0.5rem;
@@ -9,6 +10,14 @@
 
     @media screen and (max-width: 60rem) {
       font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 60rem) {
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 60rem) {
+      font-size: 0.8rem;
     }
   }
 
@@ -20,6 +29,11 @@
     &:active,
     &:hover {
       transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 60rem) {
+      width: 1.7rem;
+      height: 1.7rem;
     }
   }
 }

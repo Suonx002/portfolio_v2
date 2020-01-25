@@ -45,18 +45,19 @@ body {
       letter-spacing: 1rem; } }
   @media screen and (max-width: 40rem) {
     .heading-primary--main {
+      font-size: 3.5rem;
       letter-spacing: 0.3rem; } }
   @media screen and (max-width: 35rem) {
     .heading-primary--main {
-      letter-spacing: 0.15rem; } }
+      font-size: 3rem;
+      letter-spacing: 0.12rem; } }
 
 .heading-secondary {
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 400;
   display: inline-block;
-  letter-spacing: 2px;
-  padding: 0.4rem; }
+  letter-spacing: 2px; }
   .heading-secondary--main {
     display: block; }
   @media screen and (max-width: 80rem) {
@@ -65,15 +66,25 @@ body {
   @media screen and (max-width: 50rem) {
     .heading-secondary {
       font-size: 1.8rem; } }
+  @media screen and (max-width: 40rem) {
+    .heading-secondary {
+      font-size: 1.3rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 1rem; }
+  @media screen and (max-width: 80rem) {
+    .heading-tertiary {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 50rem) {
+    .heading-tertiary {
+      font-size: 1.1rem; } }
 
 .lead {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  hyphens: auto; }
   .lead:not(:last-child) {
     margin-bottom: 3rem; }
   @media screen and (max-width: 80rem) {
@@ -94,6 +105,7 @@ body {
       font-size: 0.8rem; } }
 
 .small {
+  hyphens: auto;
   font-size: 1.3rem; }
   @media screen and (max-width: 80rem) {
     .small {
@@ -201,14 +213,22 @@ body {
     .navbar__item a:active {
       border-bottom: 2px solid #192a56; }
     .navbar__item--resume a {
-      border: 2px solid #192a56 !important; }
+      border: 1.5px solid #192a56 !important; }
       .navbar__item--resume a:hover, .navbar__item--resume a:active {
         background-color: rgba(25, 42, 86, 0.1); }
   @media screen and (max-width: 80rem) {
     .navbar {
       justify-content: center; }
       .navbar__logo {
-        display: none; } }
+        display: none; }
+      .navbar__menu {
+        justify-content: center; } }
+  @media screen and (max-width: 50rem) {
+    .navbar__item {
+      padding: 0.5rem; } }
+  @media screen and (max-width: 40rem) {
+    .navbar__item {
+      padding: 0.1rem; } }
 
 .header {
   min-height: calc(100vh - 4.5rem);
@@ -307,6 +327,12 @@ body {
   .portfolio__img:hover {
     transform: scale(1.03);
     filter: brightness(100%); }
+  @media screen and (max-width: 60rem) {
+    .portfolio__img {
+      height: 20rem; } }
+  @media screen and (max-width: 40rem) {
+    .portfolio__img {
+      height: 15rem; } }
 
 .portfolio__btn {
   display: flex;
@@ -349,13 +375,20 @@ body {
 
 .footer .container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   @media screen and (max-width: 70rem) {
     .footer .container {
       padding: 0.5rem; } }
   @media screen and (max-width: 60rem) {
     .footer .container {
       font-size: 1.1rem; } }
+  @media screen and (max-width: 60rem) {
+    .footer .container {
+      font-size: 0.9rem; } }
+  @media screen and (max-width: 60rem) {
+    .footer .container {
+      font-size: 0.8rem; } }
 
 .footer__logo {
   width: 2rem;
@@ -363,6 +396,10 @@ body {
   transition: all 0.3s; }
   .footer__logo:active, .footer__logo:hover {
     transform: scale(1.2); }
+  @media screen and (max-width: 60rem) {
+    .footer__logo {
+      width: 1.7rem;
+      height: 1.7rem; } }
 
 .about-me {
   background-color: #192a56;

@@ -48,7 +48,7 @@
 
     &--resume {
       a {
-        border: 2px solid $color-primary-dark !important;
+        border: 1.5px solid $color-primary-dark !important;
 
         &:hover,
         &:active {
@@ -63,6 +63,22 @@
 
     &__logo {
       display: none;
+    }
+
+    &__menu {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 50rem) {
+    &__item {
+      padding: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    &__item {
+      padding: 0.1rem;
     }
   }
 }
