@@ -21,6 +21,7 @@
   &__phone,
   &__email {
     font-size: $default-font-size;
+    text-decoration: none;
     margin-bottom: 1rem;
     i {
       margin-right: 0.5rem;
@@ -51,6 +52,18 @@
     &:hover,
     &:active {
       transform: scale(1.2);
+    }
+  }
+
+  @media screen and (max-width: 60rem) {
+    &__header {
+      margin-bottom: 1.5rem;
+    }
+
+    &__phone,
+    &__email,
+    &__item {
+      font-size: 1.3rem;
     }
   }
 }

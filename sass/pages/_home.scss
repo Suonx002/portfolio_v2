@@ -31,4 +31,8 @@
   padding: 1rem;
   background-color: $color-secondary;
   color: $color-primary;
+
+  @media screen and (max-width: 50rem) {
+    padding: 0;
+  }
 }
