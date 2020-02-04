@@ -138,6 +138,7 @@ body {
 .small {
   hyphens: auto;
   font-size: 1.3rem;
+  min-height: 9rem;
 
   @media screen and (max-width: 80rem) {
     font-size: 1.1rem;
