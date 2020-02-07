@@ -105,13 +105,16 @@ body {
 
 .small {
   hyphens: auto;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  height: 12rem; }
   @media screen and (max-width: 80rem) {
     .small {
-      font-size: 1.1rem; } }
+      font-size: 1.1rem;
+      height: 6.5rem; } }
   @media screen and (max-width: 50rem) {
     .small {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      height: 7.5rem; } }
 
 .text-center {
   text-align: center; }
